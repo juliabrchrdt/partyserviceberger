@@ -1,6 +1,7 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/01_Layout/Layout"
 import styles from  "../css/wedding.module.css"
+
 
 const Wedding = () => {
   return(

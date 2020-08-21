@@ -1,11 +1,13 @@
+
+
 .page { }
 
 .page h1 {
-    color: black;}
+    color: beige;}
 
 .text {
     text-transform: uppercase;
-    background-color: beige;
+    background-color: white;
 }
 
 

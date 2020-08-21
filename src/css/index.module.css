@@ -1,7 +1,10 @@
+
+
+
 .page {
-    background:
+  display: grid;
 }
 
 .text {
-    text-transform: uppercase;}
+    text-transform: uppercase; }
 
