@@ -6,16 +6,17 @@ nav {
   grid-template-columns: 100%;
   color: black;
   font-family: $fontTitle;
-}
 
+}
+a {
+  text-decoration: none;
+  text-decoration: none;
+  color: black;
+}
 ul {
   padding: 0;
-}
-li {
   list-style-type: none;
-  padding-bottom: 1em;
 }
-
 
 .nav_items {
   text-align: center;
@@ -23,14 +24,18 @@ li {
   align-self: center;
   margin: 0;
   grid-column: 1 / 2;
-  grid-row: 2/ 6;
+  grid-row: 3/ 6;
+
 }
 
+li {
+  padding-bottom: 1em;
+  margin: 1em;
+}
 
 .nav_link {
-  text-decoration: inherit;
-  color: black;
-  margin: 1em;
+
+
 }
 
 .nav_logo {
@@ -43,7 +48,15 @@ li {
 
 }
 
-.nav_button {
+.nav_mobile_icon {
+  padding-right: 1em;
+  font-size: 1.4em;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: end;
+  align-self: center;
+  transform: translate(-100%, 60%);
+  cursor: pointer;
 
 }
 
@@ -76,5 +89,9 @@ li {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
+  }
+
+  .nav_mobile_icon {
+    display: none;
   }
 }

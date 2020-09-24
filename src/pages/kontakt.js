@@ -3,7 +3,7 @@ import Layout from "../components/01_Layout/Layout"
 
 
 
-const About = () => {
+const Kontakt = () => {
   return(
     <Layout>
       <h1>Kontakt</h1>
@@ -13,4 +13,4 @@ const About = () => {
 }
 
 
-export default About
+export default Kontakt

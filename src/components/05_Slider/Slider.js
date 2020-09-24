@@ -5,7 +5,7 @@ import styles from "../05_Slider/Slider.module.scss"
 
 const Slider = () => {
   return (
-    <div>
+    <div className={styles.slider_section}>
       <h1 className={styles.test}>Hier ist der Slider</h1>
     </div>
   )

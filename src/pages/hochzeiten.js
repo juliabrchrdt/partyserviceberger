@@ -3,7 +3,7 @@ import Layout from "../components/01_Layout/Layout"
 import styles from  "../css/wedding.module.css"
 
 
-const Wedding = () => {
+const Hochzeiten = () => {
   return(
     <Layout>
       <h1 className={styles.page}>Hochzeiten</h1>
@@ -15,4 +15,4 @@ const Wedding = () => {
   )
 }
 
-export default Wedding
+export default Hochzeiten
