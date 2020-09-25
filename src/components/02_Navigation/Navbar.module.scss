@@ -1,42 +1,65 @@
 @import "../00_Lib/variables";
-                                                // -- Mobile --
+
+
+                           // -- Mobile --
+.nav_container {
+  position: sticky;
+  top: 0;
+}
 nav {
   display: grid;
-  grid-template-rows: repeat(5, 4em) ;
-  grid-template-columns: 100%;
-  color: black;
-  font-family: $fontTitle;
-
+  grid-template-rows: 3.5em;
+  grid-template-columns: 15% 70% 15%;
+  color: $gold;
+  font-family: $fontNavbar;
+  background-color: white;
+  letter-spacing: 1.5px;
 }
+
 a {
   text-decoration: none;
   text-decoration: none;
-  color: black;
+  color: $gold;
 }
+
 ul {
   padding: 0;
   list-style-type: none;
 }
 
 .nav_items {
+visibility: hidden;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+}
+
+.nav_items_active {
+  display: grid;
+  grid-template-rows: repeat(6, 4em) ;
+  grid-template-columns: 100%;
   text-align: center;
   justify-self: center;
   align-self: center;
   margin: 0;
-  grid-column: 1 / 2;
+  grid-column: 2 / 3;
   grid-row: 3/ 6;
+}
 
+.nav_link:hover {
+  border-bottom: 2px solid;
+  border-color: $gold;
+
+
+  .nav_link:hover:after {
+    animation: fill 1s forwards;
+    opacity: 1;
+  }
 }
 
 li {
-  padding-bottom: 1em;
-  margin: 1em;
+  padding: 2em 2em;
 }
 
-.nav_link {
-
-
-}
 
 .nav_logo {
   margin: 1em;
@@ -51,47 +74,89 @@ li {
 .nav_mobile_icon {
   padding-right: 1em;
   font-size: 1.4em;
-  grid-column: 1 / 2;
+  grid-column: 3/ 4;
   grid-row: 1 / 2;
   justify-self: end;
   align-self: center;
-  transform: translate(-100%, 60%);
   cursor: pointer;
-
 }
 
+.btn {
+
+  width: 6em;
+  padding: 6px 14px;
+  border: 1.7px solid $gold;
+  border-radius: 0.5em;
+  cursor: pointer;
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+  justify-self: center;
+  align-self: center;
+  font-family: $fontNavbar;
+  font-size: 1em;
+  color: $gold;
+  background-color: white;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  border: 2px solid $gold;
+  color: $gold;
+}
 
                                           // -- Desktop --
-@media (min-width: 62em) {
+@media (min-width: 63em) {
 
   nav {
     display: grid;
     grid-template-rows: 3.5em;
-    grid-template-columns: 15% 85%;
-
+    grid-template-columns: 15% 70% 15%;
   }
+
 li {
   display: inline;
   padding-right: 1em;
 }
   .nav_items {
+    visibility: visible;
     justify-self: end;
     align-self: center;
-    margin: 0;
+    margin:0;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    transition: all 2s ease-in;
   }
 
+  .nav_items_active {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    grid-column: 2 / 4;
+    grid-row: 1/ 2;
+  }
+  .nav_link{
+    padding-right: 2em;
+  }
 
   .nav_logo {
     justify-self: center;
     align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-
   }
 
   .nav_mobile_icon {
     display: none;
   }
+
+
+  .btn {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2 ;
+    justify-self: center;
+    align-self: center;
+  }
+
 }
+

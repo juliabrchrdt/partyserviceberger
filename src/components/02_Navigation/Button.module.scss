@@ -1,0 +1,23 @@
+Button {
+  background-color: transparent;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border: 6px;
+  font-size: 1em;
+  color: black;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  padding: 6px 18px;
+  transition: all 0.3 ease-out;
+  background-color: beige;
+  border-radius: 4px;
+
+}

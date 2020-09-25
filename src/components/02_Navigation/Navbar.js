@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 import styles from "./Navbar.module.scss"
 import {NavbarItems} from "./NavbarItems"
-import {Dropdown} from ".Dropdown"
-import { Button } from "./Button"
+import {Dropdown} from "./Dropdown"
+import {DropdownKulinarik} from "./NavbarItems"
 
 
 const Navbar = () => {
@@ -31,9 +31,26 @@ const [click, setClick] = useState(false);
 
   const closeMobileMenu = () => setClick(false);
 
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  }
+
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  }
+
 
   return (
-
+<div className={styles.nav_container}>
       <nav>
         <div className={styles.nav_logo}>logo</div>
 
@@ -41,20 +58,16 @@ const [click, setClick] = useState(false);
           <FontAwesomeIcon icon = {click ? faTimes : faBars}/>
         </div>
 
-          <ul className={click ? 'nav_items active' : styles.nav_items}>
-            {NavbarItems.map((item, index)=> {
-              return (
-                <li key={index}>
-                  <Link to={item.url} className={item.cName} onClick={closeMobileMenu}>
-                    {item.title}
-                  </Link>
-                  {dropdown && <Dropdown />
-                    }
-                </li>
-              )})}
+          <ul className={click ? styles.nav_items_active : styles.nav_items}>
+            <li><Link to="/" className={styles.nav_link}>Kulinarik</Link></li>
+            <li><Link to="/hochzeiten" className={styles.nav_link}>Hochzeiten</Link></li>
+            <li><Link to="/" className={styles.nav_link}>Ausstattung</Link></li>
+            <li><Link to="/" className={styles.nav_link}>Locations</Link></li>
+            <li><Link to="/" className={styles.nav_link}> Über uns</Link></li>
           </ul>
-        <Button />
+        <button className={styles.btn}>Kontakt</button>
       </nav>
+</div>
   )
 }
 
