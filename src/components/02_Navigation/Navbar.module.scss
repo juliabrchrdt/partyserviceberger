@@ -1,14 +1,15 @@
 @import "../00_Lib/variables";
 
-
-                           // -- Mobile --
+// -- Mobile --
 .nav_container {
+  z-index: 10;
   position: sticky;
   top: 0;
 }
+
 nav {
   display: grid;
-  grid-template-rows: 3.5em;
+  grid-template-rows: 4.5em;
   grid-template-columns: 15% 70% 15%;
   color: $gold;
   font-family: $fontNavbar;
@@ -28,14 +29,14 @@ ul {
 }
 
 .nav_items {
-visibility: hidden;
+  visibility: hidden;
   grid-column: 2 / 3;
   grid-row: 1/2;
 }
 
 .nav_items_active {
   display: grid;
-  grid-template-rows: repeat(6, 4em) ;
+  grid-template-rows: repeat(6, 4em);
   grid-template-columns: 100%;
   text-align: center;
   justify-self: center;
@@ -49,7 +50,6 @@ visibility: hidden;
   border-bottom: 2px solid;
   border-color: $gold;
 
-
   .nav_link:hover:after {
     animation: fill 1s forwards;
     opacity: 1;
@@ -60,15 +60,13 @@ li {
   padding: 2em 2em;
 }
 
-
 .nav_logo {
   margin: 1em;
   justify-self: start;
-  align-self: start;
+  align-self: center;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   cursor: pointer;
-
 }
 
 .nav_mobile_icon {
@@ -82,7 +80,6 @@ li {
 }
 
 .btn {
-
   width: 6em;
   padding: 6px 14px;
   border: 1.7px solid $gold;
@@ -90,7 +87,7 @@ li {
   cursor: pointer;
   grid-column: 2 / 3;
   grid-row: 1/ 2;
-  justify-self: center;
+  justify-self: end;
   align-self: center;
   font-family: $fontNavbar;
   font-size: 1em;
@@ -104,38 +101,38 @@ li {
   color: $gold;
 }
 
-                                          // -- Desktop --
-@media (min-width: 63em) {
-
+// -- Desktop --
+@media (min-width: 76em) {
   nav {
     display: grid;
-    grid-template-rows: 3.5em;
+    grid-template-rows: 4.5em;
     grid-template-columns: 15% 70% 15%;
   }
 
-li {
-  display: inline;
-  padding-right: 1em;
-}
+  li {
+    display: inline;
+    padding-right: 1em;
+  }
   .nav_items {
     visibility: visible;
     justify-self: end;
     align-self: center;
-    margin:0;
+    margin: 0;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    transition: all 2s ease-in;
   }
 
   .nav_items_active {
+    display: inline;
     text-align: center;
     justify-self: center;
     align-self: center;
     margin: 0;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 1/ 2;
   }
-  .nav_link{
+
+  .nav_link {
     padding-right: 2em;
   }
 
@@ -150,13 +147,10 @@ li {
     display: none;
   }
 
-
   .btn {
     grid-column: 3 / 4;
-    grid-row: 1 / 2 ;
+    grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
   }
-
 }
-

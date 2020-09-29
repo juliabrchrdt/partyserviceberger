@@ -1,13 +1,15 @@
 @import "../00_Lib/variables";
 
-.body {
-  width: 100%;
-  height: 50vh;
-  background-color: $beige;
+.header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 70% 15%;
 }
-
-
-.test {
-  font-family: Poppins, sans-serif;
-  color: green;
+.header_start {
+  position: sticky;
+  grid-column: 1 / 4;
+}
+.imglogo {
+  grid-column: 2 / 3;
+  opacity: 0.3;
 }

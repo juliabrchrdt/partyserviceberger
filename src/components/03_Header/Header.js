@@ -1,19 +1,22 @@
-
 import React from "react"
 import styles from "./Header.module.scss"
+import { StartImg, LogoImg, KulinarikImg } from "../00_Lib/Images"
 
-
-const Header = () => {
+export const HeaderStart = () => {
   return (
-    <main className={styles.body}>
-    <div >
-      <h1 className={styles.test}>Hier ist der Header</h1>
+    <div className={styles.header}>
+      <div className={styles.header_start}>
+        <StartImg></StartImg>
+        <LogoImg></LogoImg>
+      </div>
     </div>
-
-    </main>
   )
 }
 
-
-export default Header
-
+export const HeaderKulinarik = () => {
+  return (
+    <div className={styles.header}>
+      <KulinarikImg />
+    </div>
+  )
+}

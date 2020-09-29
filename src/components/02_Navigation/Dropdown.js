@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import {Link} from "gatsby"
-import {DropdownKulinarik} from "./NavbarItems"
+import {DropdownKulinarik} from "./DropdownItems"
 import styles from './Dropdown.module.scss'
 
 function Dropdown() {
@@ -13,7 +13,7 @@ function Dropdown() {
   return (
     <>
       <ul onClick={handleClick}
-      className={click ? 'dropdown_menu clicked' : 'dropdown_menu'}>
+      className={click ? 'dropdown_menu_clicked' : 'dropdown_menu'}>
         {DropdownKulinarik.map((item, index) => {
           return(
             <li key={index}>
