@@ -1,19 +1,17 @@
 @import "../00_Lib/variables";
 
 // -- Mobile --
-.nav_container {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-}
 
 nav {
-  display: grid;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: inline-grid;
   grid-template-rows: 4.5em;
   grid-template-columns: 15% 70% 15%;
   color: $gold;
   font-family: $fontNavbar;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1.5px;
 }
 
@@ -28,77 +26,81 @@ ul {
   list-style-type: none;
 }
 
-.nav_items {
-  visibility: hidden;
-  grid-column: 2 / 3;
-  grid-row: 1/2;
-}
-
-.nav_items_active {
-  display: grid;
-  grid-template-rows: repeat(6, 4em);
-  grid-template-columns: 100%;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-  margin: 0;
-  grid-column: 2 / 3;
-  grid-row: 3/ 6;
-}
-
-.nav_link:hover {
-  border-bottom: 2px solid;
-  border-color: $gold;
-
-  .nav_link:hover:after {
-    animation: fill 1s forwards;
-    opacity: 1;
-  }
-}
-
 li {
   padding: 2em 2em;
 }
 
-.nav_logo {
-  margin: 1em;
-  justify-self: start;
-  align-self: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  cursor: pointer;
-}
-
-.nav_mobile_icon {
-  padding-right: 1em;
-  font-size: 1.4em;
-  grid-column: 3/ 4;
-  grid-row: 1 / 2;
-  justify-self: end;
-  align-self: center;
-  cursor: pointer;
-}
-
-.btn {
-  width: 6em;
-  padding: 6px 14px;
-  border: 1.7px solid $gold;
-  border-radius: 0.5em;
-  cursor: pointer;
-  grid-column: 2 / 3;
-  grid-row: 1/ 2;
-  justify-self: end;
-  align-self: center;
-  font-family: $fontNavbar;
+.nav {
+  width: 100vw;
   font-size: 1em;
-  color: $gold;
-  background-color: white;
-}
+  z-index: 10;
+  position: absolute;
 
-.btn:hover {
-  transform: scale(0.98);
-  border: 2px solid $gold;
-  color: $gold;
+  &__items {
+    visibility: hidden;
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+
+  &__items__active {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+  }
+
+
+
+  &__link:hover {
+    border-bottom: 2px solid;
+    border-color: $gold;
+    transition: ease-in;
+  }
+
+  &__logo {
+    margin: 1em;
+    justify-self: start;
+    align-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    cursor: pointer;
+  }
+
+  &__icon {
+    padding-right: 1em;
+    font-size: 1.4em;
+    grid-column: 3/ 4;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  &__btn {
+    width: 6em;
+    padding: 6px 14px;
+    border: 1.7px solid $gold;
+    border-radius: 0.5em;
+    cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    justify-self: end;
+    align-self: center;
+    font-family: $fontNavbar;
+    font-size: 1em;
+    color: $gold;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__btn:hover {
+    transform: scale(0.98);
+    border: 2px solid $gold;
+    color: $gold;
+  }
 }
 
 // -- Desktop --
@@ -113,44 +115,44 @@ li {
     display: inline;
     padding-right: 1em;
   }
-  .nav_items {
-    visibility: visible;
-    justify-self: end;
-    align-self: center;
-    margin: 0;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
 
-  .nav_items_active {
-    display: inline;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    margin: 0;
-    grid-column: 2 / 3;
-    grid-row: 1/ 2;
-  }
+  .nav {
+    &__items {
+      visibility: visible;
+      text-align: center;
+      justify-self: end;
+      align-self: center;
+      margin: 0;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
 
-  .nav_link {
-    padding-right: 2em;
-  }
+    &__items__active {
+      display: inline;
+      text-align: center;
+      justify-self: end;
+      align-self: center;
+      margin: 0;
+      grid-column: 2 / 3;
+      grid-row: 1/ 2;
+    }
 
-  .nav_logo {
-    justify-self: center;
-    align-self: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
+    &__logo {
+      justify-self: center;
+      align-self: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
 
-  .nav_mobile_icon {
-    display: none;
-  }
+    &__icon {
+      display: none;
+    }
 
-  .btn {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: center;
+    &__btn {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      justify-self: center;
+      align-self: center;
+    }
   }
 }

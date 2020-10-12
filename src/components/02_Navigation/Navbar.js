@@ -8,21 +8,6 @@ import { LogoKleinImg } from "../00_Lib/Images"
 import { DropdownKulinarik } from "./DropdownItems"
 
 const Navbar = () => {
-  /**const clicked = useState(false);
-
-const handleClick = () => {
-  this.setState({clicked: !this.clicked})
-  <FontAwesomeIcon icon={faBars}/>
-
-
-};
- <li><Link className={styles.nav_link} to="/">Kulinarik</Link></li>
- <li><Link className={styles.nav_link} to="/wedding/">Hochzeiten</Link></li>
- <li><Link className={styles.nav_link} to="/">Ausstattung</Link></li>
- <li><Link className={styles.nav_link} to="/">Kontakt</Link></li>
-
- **/
-
   const [click, setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false)
 
@@ -41,50 +26,48 @@ const handleClick = () => {
     if (window.innerWidth < 960) {
       setDropdown(false)
     } else {
-      setDropdown(false)
     }
   }
 
   return (
-    <div className={styles.nav_container}>
+    <div className={styles.nav}>
       <nav>
-        <div className={styles.nav_logo} onClick={closeMobileMenu}>
+        <Link to="/" className={styles.nav__logo} onClick={closeMobileMenu}>
           <LogoKleinImg />
-        </div>
+        </Link>
 
-        <div className={styles.nav_mobile_icon} onClick={handleClick}>
+        <div className={styles.nav__icon} onClick={handleClick}>
           <FontAwesomeIcon icon={click ? faTimes : faBars} />
         </div>
 
-        <ul className={click ? styles.nav_items_active : styles.nav_items}>
+        <ul className={click ? styles.nav__items__active : styles.nav__items}>
           <li>
-            <Link to="/kulinarik" className={styles.nav_link}>
+            <Link to="/kulinarik" className={styles.nav__link}>
               Kulinarik
             </Link>
           </li>
           <li>
-            <Link to="/hochzeiten" className={styles.nav_link}>
+            <Link to="/hochzeiten" className={styles.nav__link}>
               Hochzeiten
             </Link>
           </li>
           <li>
-            <Link to="/" className={styles.nav_link}>
+            <Link to="/ausstattung" className={styles.nav__link}>
               Ausstattung
             </Link>
           </li>
           <li>
-            <Link to="/" className={styles.nav_link}>
+            <Link to="/locations" className={styles.nav__link}>
               Locations
             </Link>
           </li>
           <li>
-            <Link to="/" className={styles.nav_link}>
-              {" "}
+            <Link to="/ueberUns" className={styles.nav__link}>
               Über uns
             </Link>
           </li>
         </ul>
-        <button className={styles.btn}>Kontakt</button>
+        <button className={styles.nav__btn}>Kontakt</button>
       </nav>
     </div>
   )

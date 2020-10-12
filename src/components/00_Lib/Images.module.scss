@@ -1,19 +1,9 @@
-.img_start {
+.img__position {
   display: grid;
- grid-template-rows: 100vh;
-
+  grid-template-rows: 100vh;
 }
 
-.img_logo {
-
-
-
-}
-
-.img_kulinarik {
-  opacity: 0.8;
-}
-
-.img_logo_klein {
+.img__logo__klein {
   width: 3em;
 }
+

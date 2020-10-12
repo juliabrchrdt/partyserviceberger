@@ -1,0 +1,81 @@
+@import "../00_Lib/variables";
+
+.textbox {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 50vh 50vh;
+  background: white;
+
+
+  &__content {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    margin: 2.5em;
+  }
+
+  &__title {
+    font-family: $fontTitle;
+    color: $gold;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: $fontText;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
+  &__link:hover {
+    border-bottom: 2px solid;
+    border-color: $gold;
+    transition: ease-in;
+  }
+
+  &__img {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__signature {
+    text-align: center;
+    font-family: $fontSignature;
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 70em) {
+  .textbox {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 45vh 10vh;
+
+    &__content {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin-left: 4.5em;
+    }
+
+    &__title {
+      font-size: 2em;
+    }
+
+    &__text {
+      margin-top: 1em;
+      font-size: 1.3em;
+    }
+
+    &__img {
+      max-width: 35vw;
+      visibility: visible;
+      position: relative;
+      margin: 2em;
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+  }
+}

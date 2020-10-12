@@ -1,13 +1,11 @@
 import React from "react"
 import Layout from "../components/01_Layout/Layout"
-
+import { HeaderHochzeiten } from "../components/03_Header/Header"
 
 const Hochzeiten = () => {
-  return(
+  return (
     <Layout>
-
-    <h1>Hello this is the wedding page</h1>
-
+      <HeaderHochzeiten />
     </Layout>
   )
 }
