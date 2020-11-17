@@ -175,7 +175,7 @@ export const TeamImg = () => {
   return <Image fluid={data.teamImg.childImageSharp.fluid} />
 }
 
-//Slider Images
+//SliderKulinarik Images
 
 export const SliderKulinarik01Img = () => {
   const data = useStaticQuery(getImages)
