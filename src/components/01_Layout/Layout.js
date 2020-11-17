@@ -4,7 +4,7 @@ import Header from "../03_Header/Header"
 import Footer from "../07_Footer/Footer"
 import "./Layout.module.scss"
 import "../00_Lib/variables.scss"
-import Message from "../learn/ReceivingMethods"
+
 
 
 const Layout = ({children}) => {

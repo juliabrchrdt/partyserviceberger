@@ -3,15 +3,10 @@ import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import styles from "./Images.module.scss"
 
+//Query Images
 const getImages = graphql`
   {
-    headerImg: file(relativePath: { eq: "header.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
+   
     logoImg: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
         fluid {
@@ -19,9 +14,25 @@ const getImages = graphql`
         }
       }
     }
-    kulinarikImg: file(relativePath: { eq: "kulinarik.jpg" }) {
+
+    logoKleinImg: file(relativePath: { eq: "logo_fisch.png" }) {
       childImageSharp {
         fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      
+      headerImg: file(relativePath: { eq: "header.jpg" }) {
+          childImageSharp {
+              fluid(quality: 80) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+    kulinarikImg: file(relativePath: { eq: "kulinarik.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -29,7 +40,7 @@ const getImages = graphql`
 
     ausstattungImg: file(relativePath: { eq: "ausstattung.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -37,7 +48,7 @@ const getImages = graphql`
 
     hochzeitenImg: file(relativePath: { eq: "hochzeiten.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -51,23 +62,45 @@ const getImages = graphql`
       }
     }
 
-      locationsImg: file(relativePath: { eq: "locations.jpg" }) {
-          childImageSharp {
-              fluid {
-                  ...GatsbyImageSharpFluid
-              }
-          }
-      }
-      
-    logoKleinImg: file(relativePath: { eq: "logo_fisch.png" }) {
+    locationsImg: file(relativePath: { eq: "locations.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    sliderKulinarik01Img: file(relativePath: { eq: "sliderKulinarik01.jpg" }) {
+      childImageSharp {
+        fixed (width:700) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
   }
 `
+
+//Logo Images
+export const LogoImg = () => {
+  const data = useStaticQuery(getImages)
+
+  return (
+    <div className={styles.img__logo}>
+      <Image fluid={data.logoImg.childImageSharp.fluid} />
+    </div>
+  )
+}
+
+export const LogoKleinImg = () => {
+  const data = useStaticQuery(getImages)
+
+  return (
+    <div className={styles.img__logo__klein}>
+      <Image fluid={data.logoKleinImg.childImageSharp.fluid} />
+    </div>
+  )
+}
+
 //Header Images
 export const StartImg = () => {
   const data = useStaticQuery(getImages)
@@ -79,19 +112,9 @@ export const StartImg = () => {
   )
 }
 
-export const LogoImg = () => {
-  const data = useStaticQuery(getImages)
-
-  return(
-    <div className={styles.img__logo}>
-    <Image fluid={data.logoImg.childImageSharp.fluid} />
-    </div>
-  )
-}
-
 export const KulinarikImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return (
     <div className={styles.img__position}>
@@ -100,20 +123,9 @@ export const KulinarikImg = () => {
   )
 }
 
-export const LogoKleinImg = () => {
-  const data = useStaticQuery(getImages)
-  console.log(data)
-
-  return (
-    <div className={styles.img__logo__klein}>
-      <Image fluid={data.logoKleinImg.childImageSharp.fluid} />
-    </div>
-  )
-}
-
 export const AusstattungImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return (
     <div className={styles.img__position}>
@@ -124,7 +136,7 @@ export const AusstattungImg = () => {
 
 export const HochzeitenImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return (
     <div className={styles.img__position}>
@@ -135,7 +147,7 @@ export const HochzeitenImg = () => {
 
 export const LocationsImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return (
     <div className={styles.img__position}>
@@ -146,7 +158,7 @@ export const LocationsImg = () => {
 
 export const UeberUnsImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return (
     <div className={styles.img__position}>
@@ -155,14 +167,23 @@ export const UeberUnsImg = () => {
   )
 }
 
-
-
-
-
 // Page Images
 export const TeamImg = () => {
   const data = useStaticQuery(getImages)
-  console.log(data)
+
 
   return <Image fluid={data.teamImg.childImageSharp.fluid} />
+}
+
+//Slider Images
+
+export const SliderKulinarik01Img = () => {
+  const data = useStaticQuery(getImages)
+  console.log(data)
+
+  return (
+    <div className={styles.img__slider}>
+      <Image fixed={data.sliderKulinarik01Img.childImageSharp.fixed} />
+    </div>
+  )
 }

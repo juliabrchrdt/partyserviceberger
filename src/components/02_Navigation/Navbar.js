@@ -9,10 +9,11 @@ import { DropdownKulinarik } from "./DropdownItems"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
+
   const [dropdown, setDropdown] = useState(false)
 
   const handleClick = () => setClick(!click)
-  const closeMobileMenu = () => setClick(false)
+const closeMobileMenu = () => setClick(false)
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
@@ -42,27 +43,27 @@ const Navbar = () => {
 
         <ul className={click ? styles.nav__items__active : styles.nav__items}>
           <li>
-            <Link to="/kulinarik" className={styles.nav__link}>
+            <Link to="/kulinarik" className={styles.nav__link} activeClassName={styles.nav__active}>
               Kulinarik
             </Link>
           </li>
           <li>
-            <Link to="/hochzeiten" className={styles.nav__link}>
+            <Link to="/hochzeiten" className={styles.nav__link}  activeClassName={styles.nav__active}>
               Hochzeiten
             </Link>
           </li>
           <li>
-            <Link to="/ausstattung" className={styles.nav__link}>
+            <Link to="/ausstattung" className={styles.nav__link}  activeClassName={styles.nav__active}>
               Ausstattung
             </Link>
           </li>
           <li>
-            <Link to="/locations" className={styles.nav__link}>
+            <Link to="/locations" className={styles.nav__link} activeClassName={styles.nav__active}>
               Locations
             </Link>
           </li>
           <li>
-            <Link to="/ueberUns" className={styles.nav__link}>
+            <Link to="/ueberUns" className={styles.nav__link}  activeClassName={styles.nav__active}>
               Über uns
             </Link>
           </li>

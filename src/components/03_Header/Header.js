@@ -72,7 +72,7 @@ export const HeaderUeberUns = () => {
       <div className={styles.header__position}>
         <UeberUnsImg />
       </div>
-      <h1 className={styles.header__title}>Team Berger</h1>
+      <h1 className={styles.header__title}>Über uns</h1>
     </div>
   )
 }

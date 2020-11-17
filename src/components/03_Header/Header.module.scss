@@ -2,26 +2,27 @@
 
 .header {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-columns: 10vw 80vw 10vw;
   grid-template-rows: 15vh 70vh 15vh;
 
   &__position {
     grid-column: 1/4;
     grid-row: 1/4;
-
   }
 
   &__logo {
+
+    width: 70%;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: center;
-
+    justify-self: center;
   }
 
   &__title {
     position: relative;
     font-family: $fontTitle;
-    font-size: 2.5em;
+    font-size: 7vw;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: $gold;
@@ -29,6 +30,11 @@
     grid-row: 2/3;
     align-self: center;
     justify-self: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+  &__img {
+
+
   }
 }
 
@@ -40,13 +46,14 @@
       grid-column: 1 / 4;
     }
 
-
-
     &__logo {
+      width: 80%;
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       align-self: center;
     }
+
+
   }
 }
 
