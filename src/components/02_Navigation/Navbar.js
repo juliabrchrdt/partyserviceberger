@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import styles from "./Navbar.module.scss"
 import { Dropdown } from "./Dropdown"
-import { LogoKleinImg } from "../00_Lib/Images"
-import { DropdownKulinarik } from "./DropdownItems"
+import ImageProvider from "../00_Lib/ImageProvider"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -34,7 +33,7 @@ const closeMobileMenu = () => setClick(false)
     <div className={styles.nav}>
       <nav>
         <Link to="/" className={styles.nav__logo} onClick={closeMobileMenu}>
-          <LogoKleinImg />
+          <ImageProvider styling={{width: '2.5em'}} alt={"logo"} filename={"logo_fisch.png"}/>
         </Link>
 
         <div className={styles.nav__icon} onClick={handleClick}>

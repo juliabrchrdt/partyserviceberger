@@ -1,10 +1,18 @@
 @import "../00_Lib/variables";
+.diagonalBox {
+  position:relative;
 
+  transform: skewY(-3deg);
+
+
+}
 .textbox {
+  background-color: white;
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: 50vh 50vh;
-  background: white;
+  transform: skewY(3deg);
+
 
 
   &__content {

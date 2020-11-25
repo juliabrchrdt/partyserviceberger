@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/01_Layout/Layout"
-import { HeaderAusstattung } from "../components/03_Header/Header"
+import { Header} from "../components/03_Header/Header"
 
 export default () => (
   <Layout>
-    <HeaderAusstattung />
+    <Header alt={"header"}  filename={"ausstattung.jpg"} title={"Ausstattung"} />
   </Layout>
 )

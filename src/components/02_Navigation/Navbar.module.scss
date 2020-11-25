@@ -31,9 +31,9 @@ li {
 }
 
 .nav {
+  z-index: 900;
   width: 100vw;
   font-size: 1em;
-  z-index: 10;
   position: absolute;
 
   &__items {

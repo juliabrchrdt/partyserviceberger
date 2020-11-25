@@ -1,0 +1,152 @@
+@import "../00_Lib/variables";
+
+
+.cards {
+  z-index: 200;
+
+
+  &__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 25vh 25vh 25vh 5vh;
+    background-color: $beige;
+    grid-row-gap: 2em;
+    transform: skewY(-3deg);
+  }
+
+  &__title {
+    font-family: $fontTitle;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $gold;
+    margin-top: 1em;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: start;
+    transform: skewY(3deg);
+  }
+
+  &__text {
+    margin: 1.5em;
+    padding-top: 1em;
+    font-family: $fontText;
+    text-align: justify;
+    transform: skewY(3deg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+  }
+
+  &__card1 {
+    transform: skewY(3deg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  &__card2 {
+    transform: skewY(3deg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  &__card3 {
+    transform: skewY(3deg);
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  &__subtitle {
+    width: 100%;
+    height: auto;
+
+    z-index: 30;
+    position: absolute;
+    font-family: $fontTitle;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+@media (min-width: 65em) {
+  .cards {
+    &__content {
+      z-index: 200;
+      position: relative;
+      grid-template-columns: repeat(5, 20%);
+      grid-template-rows: 10vh 50vh 10vh;
+      grid-column-gap: 3em;
+    }
+
+    &__title {
+      margin: 1.5em;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: start;
+      align-self: start;
+    }
+
+    &__text {
+      padding: 0.5em;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: center;
+      align-self: center;
+    }
+
+    &__card1 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      border: 2px solid transparent;
+      border-radius: 3em;
+      overflow: hidden;
+    }
+
+    &__card2 {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      border: 2px solid transparent;
+      border-radius: 3em;
+      overflow: hidden;
+    }
+
+    &__card3 {
+      grid-column: 4/5;
+      grid-row: 2/3;
+      border: 2px solid transparent;
+      border-radius: 3em;
+      overflow: hidden;
+    }
+
+    &__card3:hover {
+      transition: 0.5s ease;
+      z-index: 22;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    &__card2:hover {
+      transition: 0.5s ease;
+      z-index: 22;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+ &__card1:hover {
+        transition: 0.5s ease;
+        z-index: 22;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+  }
+}

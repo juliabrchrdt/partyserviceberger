@@ -1,18 +1,28 @@
 @import "../00_Lib/variables";
 
+.box {
+  position: relative;
+  height: 100vh;
+}
+
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 15vh 70vh 15vh;
+  grid-template-rows: 15vh 60vh 15vh;
+
+
 
   &__position {
+
     grid-column: 1/4;
     grid-row: 1/4;
+
   }
 
   &__logo {
 
-    width: 70%;
+    width: 50vw;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: center;
@@ -30,37 +40,13 @@
     grid-row: 2/3;
     align-self: center;
     justify-self: center;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   }
-  &__img {
 
-
-  }
 }
 
 @media (min-width: 76em) {
   .header {
     grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows: 15vh 70vh 15vh;
-    &__position {
-      grid-column: 1 / 4;
-    }
-
-    &__logo {
-      width: 80%;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      align-self: center;
-    }
-
-
   }
 }
-
-/*
- &__logo {
-        max-width: 60vw;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        align-self: center;
-      }*/

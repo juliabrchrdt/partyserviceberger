@@ -1,16 +1,27 @@
 import React from "react"
 import Layout from "../components/01_Layout/Layout"
-import { HeaderStart } from "../components/03_Header/Header"
+import { Header } from "../components/03_Header/Header"
 import TextBox from "../components/04_TextBox/Textbox"
 import SliderKulinarik from "../components/05_Slider/SliderKulinarik"
 import SliderHochzeit from "../components/05_Slider/SliderHochzeit"
-
+import { Cards } from "../components/07_Cards/Cards"
+import { Contact } from "../components/08_Contact/Contact"
 
 export default () => (
   <Layout>
-    <HeaderStart />
+    <Header alt={"header"} filename={"header.jpg"} fileLogo={"logo.png"} />
     <TextBox />
-    <SliderKulinarik link={"Erfahre mehr"}/>
-    <SliderHochzeit />
+    <SliderKulinarik link={" Erfahre mehr"} />
+    <SliderHochzeit link={" Erfahre mehr"} />
+    <Cards
+      title={"Locations"}
+      sub1={"Gut Haagn"}
+      sub2={"Schloss Egg"}
+      sub3={"Teisnach"}
+    />
+    <Contact />
   </Layout>
 )
+
+//
+//

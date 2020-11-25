@@ -1,78 +1,32 @@
 import React from "react"
 import styles from "./Header.module.scss"
-import {
-  StartImg,
-  LogoImg,
-  KulinarikImg,
-  AusstattungImg,
-  HochzeitenImg,
-  LocationsImg, UeberUnsImg
-} from "../00_Lib/Images"
+import ImageProvider from "../00_Lib/ImageProvider"
+import UseAnimations from "react-useanimations";
+import github from 'react-useanimations/lib/github'
 
-export const HeaderStart = () => {
+
+
+export const Header = props => {
   return (
+<div className={styles.box}>
     <div className={styles.header}>
+
       <div className={styles.header__position}>
-        <StartImg />
+        <ImageProvider
+          styling={{ height: "111%" }}
+          alt={props.alt}
+          filename={props.filename}
+        />
       </div>
+
       <div className={styles.header__logo}>
-        <LogoImg />
-      </div>
-    </div>
-  )
-}
+        <ImageProvider alt={props.alt} filename={props.fileLogo} />
 
-export const HeaderKulinarik = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__position}>
-        <KulinarikImg />
+        <h1 className={styles.header__title}>{props.title}</h1>
       </div>
-      <h1 className={styles.header__title}>Kulinarik</h1>
     </div>
-  )
-}
+ 
+</div>
 
-export const HeaderAusstattung = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__position}>
-        <AusstattungImg />
-      </div>
-      <h1 className={styles.header__title}>Ausstattung</h1>
-    </div>
-  )
-}
-
-export const HeaderHochzeiten = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__position}>
-        <HochzeitenImg />
-      </div>
-      <h1 className={styles.header__title}>Hochzeiten</h1>
-    </div>
-  )
-}
-
-export const HeaderLocations = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__position}>
-        <LocationsImg />
-      </div>
-      <h1 className={styles.header__title}>Locations</h1>
-    </div>
-  )
-}
-
-export const HeaderUeberUns = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__position}>
-        <UeberUnsImg />
-      </div>
-      <h1 className={styles.header__title}>Über uns</h1>
-    </div>
   )
 }

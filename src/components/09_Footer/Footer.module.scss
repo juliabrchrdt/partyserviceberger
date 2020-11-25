@@ -1,11 +1,15 @@
 @import "../00_Lib/variables";
 
 .footer {
+
+ position: relative;
+  bottom: 0;
   display: grid;
   grid-template-columns: 30vw 40vw 30vw;
   grid-template-rows: 7vh;
   font-size: 0.6em;
   font-family: $fontTitle;
+  background-color: white;
 
 
 
