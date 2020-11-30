@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <p className={styles.footer__copyright}> © Partyservice Berger 2020 </p>
-      <Link to="/" className={styles.footer__link}>
+      <Link to="/impressum" className={styles.footer__link}>
         Impressum
       </Link>
-      <Link to="/"  className={styles.footer__link1}>
+      <Link to="/impressum" className={styles.footer__link1}>
         Datenschutz
       </Link>
     </div>

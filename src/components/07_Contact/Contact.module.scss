@@ -5,12 +5,13 @@
   position: relative;
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 5vh 10vh 15vh 15vh 10vh;
+  grid-template-rows: 5vh 10vh 20vh 20vh 15vh;
   grid-row-gap: 2em;
 
   &__text {
     font-family: $fontText;
     font-size: 1.1em;
+    color: black;
   }
   &__mail {
     height: 10vh;
@@ -43,9 +44,17 @@
     grid-column: 1/2;
     grid-row: 5/6;
     justify-self: center;
-    align-self: center;
+    align-self: start;
     text-align: center;
   }
+
+  &__link {
+    font-family: $fontText;
+    font-size: 1.1em;
+    color: black;
+  }
+
+
 
 }
 
@@ -81,6 +90,15 @@
       justify-self: center;
       align-self: center;
 
+    }
+
+    &__link {
+      font-family: $fontText;
+      font-size: 1.1em;
+      color: black;
+    }
+    &__link:hover {
+      color: $gold;
     }
   }
 }

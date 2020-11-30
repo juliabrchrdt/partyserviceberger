@@ -7,6 +7,7 @@ import {
   RiInstagramLine
 } from "react-icons/ri"
 
+
 export const Contact = props => {
   return (
     <div className={styles.contact}>
@@ -17,7 +18,7 @@ export const Contact = props => {
       </div>
       <div className={styles.contact__phone}>
         <RiCustomerServiceLine size={32} color="#a3985d" />
-        <p className={styles.contact__text}> 09906 / 9 09 00 20 </p>
+        <p className={styles.contact__text}> 03329 /929410 </p>
         <p className={styles.contact__text}> Mo. - Fr. von 7:30 - 13 Uhr</p>
         <p className={styles.contact__text}> Besprechung nach Vereinbarung</p>
       </div>
@@ -28,7 +29,7 @@ export const Contact = props => {
       </div>
       <div className={styles.contact__instagram}>
         <RiInstagramLine size={32} color="#a3985d" />
-        <p className={styles.contact__text}>partyserviceberger </p>
+        <a href="https://www.instagram.com/partyservice_berger/" className={styles.contact__link}><p> partyservice_berger </p></a>
 
       </div>
     </div>

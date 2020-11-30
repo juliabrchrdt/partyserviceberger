@@ -19,15 +19,14 @@ Selbstverständlich haben wir unsere traditionellen Wurzeln in Bayern und auf de
     subtitle: "Buffets aus aller Welt",
     img: require("../../images/sliderKulinarik-2.jpeg"),
     text: `Besonders unsere Balkanspezialitäten nach traditionellen Familienrezepturen bereichern unsere BBQ-Events und sind fester Bestandteil in unserem Portfolio.
-Absolute Frische, Qualität und Regionalität stehen für uns an erster Stelle. `,
+Absolute Frische, Qualität und Regionalität stehen für uns an erster Stelle.`,
   },
   {
     id: 3,
     title: "Kulinarik",
     subtitle: "Highlights am Buffet",
     img: require("../../images/sliderKulinarik-3.jpeg"),
-    text: `Fleischspezialitäten bilden nach wie vor den Zenit eines klassischen Buffets. Ob rosa gebratene Lende vom Kalb, gegrillte Haxe vom Lamm oder englisches Roastbeef - bei uns kommt alles unters Messer!
-.`,
+    text: `Fleischspezialitäten bilden nach wie vor den Zenit eines klassischen Buffets. Ob rosa gebratene Lende vom Kalb, gegrillte Haxe vom Lamm oder englisches Roastbeef - bei uns kommt alles unters Messer!`,
   },
 ]
 

@@ -15,7 +15,7 @@ const slides = [
   {
     id: 2,
     title: "Hochzeiten",
-    subtitle: "Welche Rolle wir an Ihrer Hochzeit spielen",
+    subtitle: "Wir schaffen Erinnerungen",
     img: require("../../images/sliderHochzeit-2.jpg"),
     text: `Je nach Ihren Wünschen und Vorstellungen übernehmen wir gerne die Planung Ihres Hochzeitstages bis hin zum Hochzeitsauto. Oder aber wir halten uns im Hintergrund und kümmern uns voll und ganz um die kulinarischen Aspekte Ihres Tages. `,
   },
