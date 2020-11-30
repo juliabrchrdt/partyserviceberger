@@ -16,7 +16,7 @@ export const Cards = props => {
 
         <div className={styles.cards__card1}>
           <h2 className={styles.cards__subtitle}>{props.sub1}</h2>
-          <Link to="/">
+          <Link to="/locations">
             <ImageProvider
               alt={"location"}
               filename={"location1.jpg"}
@@ -27,7 +27,7 @@ export const Cards = props => {
 
         <div className={styles.cards__card2}>
           <h2 className={styles.cards__subtitle}>{props.sub2}</h2>
-          <Link to="/">
+          <Link to="/locations">
             <ImageProvider
               alt={"location"}
               filename={"location2.jpg"}
@@ -38,7 +38,7 @@ export const Cards = props => {
 
         <div className={styles.cards__card3}>
           <h2 className={styles.cards__subtitle}>{props.sub3}</h2>
-          <Link to="/">
+          <Link to="/locations">
             <ImageProvider
               alt={"location"}
               filename={"location3.jpg"}

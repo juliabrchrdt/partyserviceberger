@@ -69,7 +69,7 @@ const closeMobileMenu = () => setClick(false)
           </li>
         </ul>
 
-        <button className={styles.nav__btn}>Kontakt</button>
+        <button className={styles.nav__btn}><a href="/ueberUns">Kontakt </a></button>
 
       </nav>
     </div>

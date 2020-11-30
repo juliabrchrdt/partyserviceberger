@@ -28,6 +28,7 @@
     position: relative;
     font-family: $fontTitle;
     font-size: 7vw;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: $gold;
@@ -40,7 +41,17 @@
 }
 
 @media (min-width: 76em) {
+  .box {
+    position: relative;
+    height: 100vh;
+  }
   .header {
     grid-template-columns: 25vw 50vw 25vw;
+
+    &__title {
+      font-size: 5vw;
+    }
   }
+
+
 }

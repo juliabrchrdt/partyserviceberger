@@ -1,40 +1,36 @@
 @import "../00_Lib/variables";
-.diagonalBox {
-  position:relative;
 
-  transform: skewY(-3deg);
-
-
-}
 .textbox {
   background-color: white;
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 50vh 50vh;
-  transform: skewY(3deg);
-
-
+  grid-template-rows: 15vh 40vh 30vh 5vh;
 
   &__content {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 3/4;
     justify-self: center;
     align-self: center;
     margin: 2.5em;
   }
 
   &__title {
+    margin-top: 2em;
     font-family: $fontTitle;
     color: $gold;
     font-size: 1.8em;
     text-align: center;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+
   }
 
   &__text {
-    margin-top: 0.5em;
+    grid-row: 2/3;
     margin-bottom: 0.5em;
     font-family: $fontText;
-    font-size: 2.1vh;;
+    font-size: 2.1vh;
     text-align: justify;
   }
 
@@ -45,8 +41,10 @@
   }
 
   &__img {
-    visibility: hidden;
-    position: absolute;
+    grid-row: 2/3;
+
+    overflow: hidden;
+
   }
 
   &__signature {
@@ -54,23 +52,29 @@
     font-family: $fontSignature;
     font-size: 2em;
     margin-top: 1em;
+
   }
 }
 
 @media (min-width: 70em) {
   .textbox {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20vh 60vh;
+    grid-template-rows: 12vh 50vh 12vh;
+    grid-column-gap: 1em;
 
     &__content {
       grid-column: 2/3;
-      grid-row: 1/3;
+      grid-row: 2/3;
       margin-left: 1.5em;
-
     }
 
     &__title {
+      grid-column: 2/3;
+      grid-row: 2/3;
       font-size: 2em;
+      align-self: start;
+      justify-self: start;
+      margin-left: 1em;
     }
 
     &__text {
@@ -80,8 +84,10 @@
     }
 
     &__img {
-      margin-left: 2em;
-      max-width: 35vw;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      overflow: hidden;
       visibility: visible;
       position: relative;
       grid-row: 2/3;

@@ -8,7 +8,7 @@ export const Header = props => {
       <div className={styles.header}>
         <div className={styles.header__position}>
           <ImageProvider
-            styling={{ height: "111%" }}
+            styling={props.styling}
             alt={props.alt}
             filename={props.filename}
           />

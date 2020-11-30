@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export default [
+const data = [
   {
     id: 1,
     title: 'Herzlich Wilkommen',
@@ -15,4 +15,6 @@ export default [
 
   }
 ]
+
+export default data
 
