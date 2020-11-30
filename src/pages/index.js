@@ -4,8 +4,8 @@ import { Header } from "../components/03_Header/Header"
 import TextBox from "../components/04_TextBox/Textbox"
 import SliderKulinarik from "../components/05_Slider/SliderKulinarik"
 import SliderHochzeit from "../components/05_Slider/SliderHochzeit"
-import { Cards } from "../components/07_Cards/Cards"
-import { Contact } from "../components/08_Contact/Contact"
+import { Cards } from "../components/06_Cards/Cards"
+import { Contact } from "../components/07_Contact/Contact"
 
 export default () => (
   <Layout>

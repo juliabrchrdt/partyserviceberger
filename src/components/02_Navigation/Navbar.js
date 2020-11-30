@@ -5,6 +5,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import styles from "./Navbar.module.scss"
 import { Dropdown } from "./Dropdown"
 import ImageProvider from "../00_Lib/ImageProvider"
+import { Contact } from "../07_Contact/Contact"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -67,7 +68,9 @@ const closeMobileMenu = () => setClick(false)
             </Link>
           </li>
         </ul>
+
         <button className={styles.nav__btn}>Kontakt</button>
+
       </nav>
     </div>
   )

@@ -73,13 +73,13 @@ const SliderKulinarik = props => {
   }
 
   return (
-    <div className={styles.diagnoalBox}>
+
       <div className={styles.slider}>
 
         <div className={styles.slider__number}>{"0" + slide.id}</div>
         <p className={styles.slider__title}>{slide.title}</p>
         <div className={styles.slider__text}>
-          <h2 className={styles.slider__subtitle}> {slide.subtitle}</h2>
+          <p className={styles.slider__subtitle}> {slide.subtitle}</p>
           {slide.text}
           <Link to="/" className={styles.slider__link}>
             {props.link}
@@ -101,7 +101,6 @@ const SliderKulinarik = props => {
           onKeyPress={handleLeft}
         ></img>
       </div>
-    </div>
   )
 }
 

@@ -17,7 +17,6 @@ nav {
 
 a {
   text-decoration: none;
-  text-decoration: none;
   color: $gold;
 }
 
@@ -33,7 +32,7 @@ li {
 .nav {
   z-index: 900;
   width: 100vw;
-  font-size: 1em;
+  font-size: 1.1em;
   position: absolute;
 
   &__items {
@@ -44,17 +43,13 @@ li {
 
   &__items__active {
     display: grid;
-    grid-template-columns: 100%;
     text-align: center;
     justify-self: center;
     align-self: center;
     margin: 0;
     grid-column: 2 / 3;
     grid-row: 2/3;
-
   }
-
-
 
   &__link:hover {
     border-bottom: 2px solid;
@@ -107,7 +102,6 @@ li {
   &__active {
     border-bottom: 2px solid $gold;
   }
-
 }
 
 // -- Desktop --
@@ -167,9 +161,7 @@ li {
     }
 
     &__active {
-
       opacity: 0.6;
     }
-
   }
 }

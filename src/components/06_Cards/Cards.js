@@ -11,18 +11,17 @@ export const Cards = props => {
         <p className={styles.cards__text}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren,
+          sed diam voluptua.
         </p>
 
         <div className={styles.cards__card1}>
           <h2 className={styles.cards__subtitle}>{props.sub1}</h2>
           <Link to="/">
-          <ImageProvider
-            alt={"location"}
-            filename={"location1.jpg"}
-            styling={{ height: "100%" }}
-          />
+            <ImageProvider
+              alt={"location"}
+              filename={"location1.jpg"}
+              styling={{ height: "100%" }}
+            />
           </Link>
         </div>
 
@@ -35,17 +34,16 @@ export const Cards = props => {
               styling={{ height: "100%", backfaceVisibility: "hidden" }}
             ></ImageProvider>
           </Link>
-
         </div>
 
         <div className={styles.cards__card3}>
           <h2 className={styles.cards__subtitle}>{props.sub3}</h2>
           <Link to="/">
-          <ImageProvider
-            alt={"location"}
-            filename={"location3.jpg"}
-            styling={{ height: "100%" }}
-          />
+            <ImageProvider
+              alt={"location"}
+              filename={"location3.jpg"}
+              styling={{ height: "100%" }}
+            />
           </Link>
         </div>
       </div>

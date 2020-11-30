@@ -4,7 +4,7 @@ import styles from "../04_TextBox/Textbox.module.scss"
 import data from "./TextboxData"
 import ImageProvider from "../00_Lib/ImageProvider"
 
-const TextBox = ({ title, text }) => {
+const TextBox = () => {
   return (
     <div className={styles.diagonalBox}>
       <div className={styles.textbox}>

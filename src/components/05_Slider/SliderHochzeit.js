@@ -24,7 +24,7 @@ const slides = [
     title: "Hochzeiten",
     subtitle: "Specials für Hochzeiten",
     img: require("../../images/sliderHochzeit-3.jpg"),
-    text: `Wir arrangieren für Sie gerne einen stilvollen Steh- und Sektempfang an verschiedenen Locations Ihrer Wahl. Unser engagiertes Serviceteam verwöhnt Sie mit vielerlei Canapés oder einem abwechslungsreichen Flying Buffet. Unsere hauseigenen, spritzigen Aperitif-Kreationen runden den klassischen Sektempfang ab..`,
+    text: ` Unser engagiertes Serviceteam verwöhnt Sie mit vielerlei Canapés oder einem abwechslungsreichen Flying Buffet. Unsere hauseigenen, spritzigen Aperitif-Kreationen runden den klassischen Sektempfang ab..`,
   },
 ]
 
@@ -70,17 +70,18 @@ const SliderKulinarik = props => {
   }
 
   return (
-    <div className={styles.sliderWhite__box}>
     <div className={styles.sliderWhite}>
       <div className={styles.sliderWhite__number}>{"0" + slide.id}</div>
       <p className={styles.sliderWhite__title}>{slide.title}</p>
       <div className={styles.sliderWhite__text}>
-        <h2 className={styles.sliderWhite__subtitle}> {slide.subtitle}</h2>
+        <p className={styles.sliderWhite__subtitle}> {slide.subtitle}</p>
         {slide.text}
+
         <Link to="/" className={styles.sliderWhite__link}>
           {props.link}
         </Link>
       </div>
+
       <img src={slide.img} className={styles.sliderWhite__img}></img>
 
       <img
@@ -95,7 +96,6 @@ const SliderKulinarik = props => {
         onClick={handleLeft}
         onKeyPress={handleLeft}
       ></img>
-    </div>
     </div>
   )
 }
