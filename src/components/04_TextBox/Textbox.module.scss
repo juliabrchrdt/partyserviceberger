@@ -4,7 +4,8 @@
   background-color: white;
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 15vh 40vh 30vh 5vh;
+  grid-template-rows: 20vh 40vh 35vh 5vh;
+  overflow: hidden;
 
   &__content {
     grid-column: 1/2;
@@ -23,7 +24,6 @@
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
-
   }
 
   &__text {
@@ -42,9 +42,7 @@
 
   &__img {
     grid-row: 2/3;
-
     overflow: hidden;
-
   }
 
   &__signature {
@@ -52,7 +50,6 @@
     font-family: $fontSignature;
     font-size: 2em;
     margin-top: 1em;
-
   }
 }
 
