@@ -40,7 +40,6 @@
     align-self: center;
   }
   &__subtitle {
-    font-family: Poppins;
     padding-bottom: 0.5em;
     font-size: 1.3em;
     color: $gold;
@@ -79,7 +78,7 @@
     text-align: justify;
     margin: 2em;
     font-family: $fontText;
-    font-size: 2.4vh;
+    font-size: 2.1vh;
   }
 
   &__link {
@@ -162,8 +161,6 @@
       color: $gold;
     }
 
-    &__subtitle {
-    }
 
     &__number {
       grid-column: 1/2;
@@ -185,7 +182,7 @@
       text-align: justify;
       margin: 2em;
       font-family: $fontText;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
 
     &__btnLeft {

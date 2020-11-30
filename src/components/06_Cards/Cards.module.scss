@@ -26,9 +26,11 @@
   }
 
   &__text {
+
     margin: 1.5em;
     padding-top: 1em;
     font-family: $fontText;
+    font-size: 2.1vh;;
     text-align: justify;
     grid-column: 1/2;
     grid-row: 1/2;
