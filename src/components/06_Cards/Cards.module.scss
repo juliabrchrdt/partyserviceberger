@@ -1,7 +1,6 @@
 @import "../00_Lib/variables";
 
 .cards {
-
   z-index: 200;
 
   &__content {
@@ -11,8 +10,6 @@
     grid-template-rows: 5vh 15vh 25vh 25vh 25vh 5vh;
     background-color: $beige;
     grid-row-gap: 2em;
-
-
   }
 
   &__title {
@@ -34,7 +31,7 @@
     margin-top: 2em;
     padding-top: 2em;
     font-family: $fontText;
-    font-size: 2.1vh;;
+    font-size: 2.1vh;
     text-align: justify;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -90,8 +87,6 @@
     opacity: 0.7;
     cursor: pointer;
   }
-
-
 }
 
 @media (min-width: 70em) {

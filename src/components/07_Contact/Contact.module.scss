@@ -53,9 +53,6 @@
     font-size: 1.1em;
     color: black;
   }
-
-
-
 }
 
 @media (min-width: 70em) {
@@ -82,14 +79,12 @@
       grid-row: 1/2;
       justify-self: center;
       align-self: center;
-
     }
     &__instagram {
       grid-column: 4/5;
       grid-row: 1/2;
       justify-self: center;
       align-self: center;
-
     }
 
     &__link {
