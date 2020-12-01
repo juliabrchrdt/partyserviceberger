@@ -19,7 +19,7 @@
     margin-top: 2em;
     font-family: $fontTitle;
     color: $gold;
-    font-size: 1.8em;
+    font-size: 4vw;
     text-align: center;
     grid-row: 1/2;
     justify-self: center;
@@ -56,19 +56,19 @@
 @media (min-width: 70em) {
   .textbox {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 12vh 50vh 12vh;
+    grid-template-rows: 12vh 10vh 35vh 12vh;
     grid-column-gap: 1em;
 
     &__content {
       grid-column: 2/3;
-      grid-row: 2/3;
+      grid-row: 3/4;
       margin-left: 1.5em;
     }
 
     &__title {
       grid-column: 2/3;
       grid-row: 2/3;
-      font-size: 2em;
+      font-size: 2vw;
       align-self: start;
       justify-self: start;
       margin-left: 1em;
@@ -87,8 +87,10 @@
       overflow: hidden;
       visibility: visible;
       position: relative;
-      grid-row: 2/3;
+      grid-row: 2/4;
       grid-column: 1/2;
+      align-self: center;
+      justify-self: center;
     }
   }
 }
