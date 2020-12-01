@@ -1,10 +1,11 @@
 @import "../00_Lib/variables";
 
 .textbox {
+  position: relative;
   background-color: white;
   display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 15vh 40vh 35vh 5vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 40% 40% 5%;
   overflow: hidden;
 
   &__content {
@@ -17,10 +18,10 @@
   }
 
   &__title {
-    margin-top: 2em;
+    margin: 1em;
     font-family: $fontTitle;
     color: $gold;
-    font-size:5vw;
+    font-size:180%;
     text-align: center;
     grid-row: 1/2;
     justify-self: center;
@@ -57,8 +58,9 @@
 
 @media (min-width: 70em) {
   .textbox {
+
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20vh 10vh 30vh 20vh;
+    grid-template-rows: 10% 30% 30% 10%;
     grid-column-gap: 1em;
 
 
@@ -74,7 +76,7 @@
       font-size: 2vw;
       align-self: start;
       justify-self: start;
-      margin-left: 1em;
+
     }
 
     &__text {
@@ -88,8 +90,6 @@
       height: auto;
       margin-left: 0;
       overflow: hidden;
-      visibility: visible;
-      position: relative;
       grid-row: 2/4;
       grid-column: 1/2;
       align-self: center;

@@ -6,7 +6,7 @@ import TextBox from "../components/04_TextBox/Textbox"
 const Hochzeiten = () => {
   return (
     <Layout>
-      <Header alt={"header"}  filename={"hochzeit-3.jpg"} title={"Hochzeiten"} styling={{height: "111%"}}/>
+      <Header alt={"header"}  filename={"hochzeit-3.jpg"} title={"Hochzeiten"} styling={{height: "100%"}}/>
       <TextBox
         title={"Der schönste Tag Ihres Lebens"}
         text={`Nach über 30 Ehejahren blicken wir noch immer gerne auf unseren eigenen Hochzeitstag zurück, der uns daran erinnert, wie unvergesslich ein einzelner Tag sein kann. Deshalb legen wir alles daran, gerade diesen Tag für Sie zu einem einzigartigen Erlebnis werden zu lassen. In den langen Jahren, in denen wir die unterschiedlichsten Brautpaare beraten durften, konnten wir viele Erfahrungen sammeln, die wir gerne an Sie weitergeben.`}

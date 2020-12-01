@@ -1,15 +1,14 @@
 @import "../00_Lib/variables";
 
 .box {
-  position: relative;
-  height: 100vh;
+margin: 0;
 }
 
 .header {
-  position: relative;
+
   display: grid;
-  grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 15vh 60vh 15vh;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 25vh 50vh 25vh;
 
   &__position {
     grid-column: 1/4;
@@ -40,13 +39,14 @@
   }
 }
 
-@media (min-width: 76em) {
+@media (min-width: 70em) {
   .box {
-    position: relative;
-    height: 100vh;
+
   }
   .header {
-    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 40% 25%;
+
 
     &__title {
       font-size: 5vw;

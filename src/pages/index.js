@@ -10,7 +10,7 @@ import { data } from "../components/04_TextBox/TextboxData"
 
 export default () => (
   <Layout>
-    <Header alt={"header"} filename={"header.jpg"} fileLogo={"logo.png"} styling={{height: "111%"}}/>
+    <Header alt={"header"} filename={"header.jpg"} fileLogo={"logo.png"} styling={{height: "100%"}}/>
     <TextBox
       title={"Genießen Sie das Besondere"}
       text={`Nach diesem Motto verwöhnen wir unsere Kunden nun schon seit vielen Jahren. 

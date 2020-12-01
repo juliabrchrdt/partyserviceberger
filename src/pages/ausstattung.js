@@ -5,7 +5,7 @@ import TextBox from "../components/04_TextBox/Textbox"
 
 export default () => (
   <Layout>
-    <Header alt={"header"}  filename={"ausstattung.jpg"} title={"Ausstattung & Specials"}  styling={{height: "111%"}}/>
+    <Header alt={"header"}  filename={"ausstattung.jpg"} title={"Ausstattung & Specials"}  styling={{height: "100%"}}/>
     <TextBox
       title={"Cigar Voyager Bar"}
       text={`Eine Zigarre bildet zusammen mit dem passenden Drink ein Sinnbild von Luxus und Genuss – somit wird sie mit besonderen Anlässen in Verbindung gebracht.

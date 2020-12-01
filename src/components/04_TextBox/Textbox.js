@@ -21,7 +21,7 @@ const TextBox = (props) => {
               </div>
             </div>
         <div className={styles.textbox__img}>
-          <ImageProvider alt={props.alt} filename={props.filename} />
+          <ImageProvider alt={props.alt} filename={props.filename}  />
         </div>
       </div>
   )

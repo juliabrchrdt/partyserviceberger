@@ -8,7 +8,7 @@ import TextBox from "../components/04_TextBox/Textbox"
 const UeberUns = () => {
   return (
     <Layout>
-     <Header title={"Über uns"} filename={"teamBerger-6.jpg"} styling={{height: "111%"}}/>
+     <Header title={"Über uns"} filename={"teamBerger-6.jpg"} styling={{height: "100%"}}/>
 
       <TextBox
         title={"Eine Familientradition"}

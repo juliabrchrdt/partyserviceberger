@@ -155,7 +155,7 @@
       justify-self: start;
       align-self: start;
       margin: 2em;
-      font-size: 2em;
+      font-size: 200%;
       font-family: $fontTitle;
       text-transform: uppercase;
       color: $gold;
@@ -200,6 +200,7 @@
       grid-column: 1/2;
       justify-self: center;
       align-self: end;
+
     }
   }
 

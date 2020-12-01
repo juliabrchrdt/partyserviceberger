@@ -7,7 +7,7 @@ import TextBox from "../components/04_TextBox/Textbox"
 const Locations = () => {
   return (
     <Layout>
-      <Header  title={"Unsere Partnerlocations"} filename={"locations.jpg"} styling={{height: "111%"}} alt={"locations"}/>
+      <Header  title={"Unsere Partnerlocations"} filename={"locations.jpg"} styling={{height: "100%"}} alt={"locations"}/>
 
       <TextBox
         title={"Schloss Steinach"}

@@ -6,7 +6,7 @@ import Title from "../components/00_Lib/Fragments"
 
 export default () => (
   <Layout>
-    <Header filename={"kulinarik.jpg"} title={"Kulinarische Köstlichkeiten"} styling={{height: "111%"}}/>
+    <Header filename={"kulinarik.jpg"} title={"Kulinarische Köstlichkeiten"} styling={{height: "100%"}}/>
 
     <TextBox
       title={"Ein Blick in unsere Küche"}
