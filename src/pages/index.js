@@ -26,6 +26,9 @@ filename={"teamBerger.jpg"}
     <SliderHochzeit link={" Erfahre mehr"} />
     <Cards
       title={"Locations"}
+      text={ `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.`}
       sub1={"Schloss Offenberg"}
       sub2={"Schloss Steinach"}
       sub3={"Gut Haggn"}

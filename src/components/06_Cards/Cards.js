@@ -9,9 +9,7 @@ export const Cards = props => {
       <div className={styles.cards__content}>
         <h1 className={styles.cards__title}>{props.title}</h1>
         <p className={styles.cards__text}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+          {props.text}
         </p>
 
         <div className={styles.cards__card1}>

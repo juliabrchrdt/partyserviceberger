@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "../04_TextBox/Textbox.module.scss"
-import data from "./TextboxData"
 import ImageProvider from "../00_Lib/ImageProvider"
 
 const TextBox = (props) => {
