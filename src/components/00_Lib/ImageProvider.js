@@ -5,14 +5,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default (props) => {
 
-  const { filename, type = 'default', alt, sizes = 'default' } = props;
+  const { filename, alt } = props;
   const images = useStaticQuery(graphql`
       query ImageQuery {
           data: allFile {
               edges {
                   node {
                       relativePath
-                      default: childImageSharp {
+                       childImageSharp {
                           fluid(quality: 80) {
                               ...GatsbyImageSharpFluid
                           }
@@ -33,9 +33,7 @@ export default (props) => {
   }
 
   return (
-    <Img style={props.styling}  alt={alt} fluid={{
-      ...image.node[type].fluid,
-      sizes: sizes,
-    }} />
+    <Img style={props.styling}  alt={alt} fluid={image.node.childImageSharp.fluid
+    } />
   )
 }

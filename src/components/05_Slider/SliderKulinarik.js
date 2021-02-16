@@ -72,34 +72,32 @@ const SliderKulinarik = props => {
   }
 
   return (
-
-      <div className={styles.slider}>
-
-        <div className={styles.slider__number}>{"0" + slide.id}</div>
-        <p className={styles.slider__title}>{slide.title}</p>
-        <div className={styles.slider__text}>
-          <p className={styles.slider__subtitle}> {slide.subtitle}</p>
-          {slide.text}
-          <Link to="/" className={styles.slider__link}>
-            {props.link}
-          </Link>
-        </div>
-        <img alt={"slider"}src={slide.img} className={styles.slider__img}></img>
-        <img
-          alt={"right"}
-          src={arrowRight}
-          className={styles.slider__btnRight}
-          onClick={handleRight}
-          onKeyPress={handleRight}
-        ></img>
-        <img
-          alt={"left"}
-          src={arrowLeft}
-          className={styles.slider__btnLeft}
-          onClick={handleLeft}
-          onKeyPress={handleLeft}
-        ></img>
+    <div className={styles.slider}>
+      <div className={styles.slider__number}>{"0" + slide.id}</div>
+      <p className={styles.slider__title}>{slide.title}</p>
+      <div className={styles.slider__text}>
+        <p className={styles.slider__subtitle}> {slide.subtitle}</p>
+        {slide.text}
+        <Link to="/" className={styles.slider__link}>
+          {props.link}
+        </Link>
       </div>
+      <img alt={"slider"} src={slide.img} className={styles.slider__img}></img>
+      <img
+        alt={"right"}
+        src={arrowRight}
+        className={styles.slider__btnRight}
+        onClick={handleRight}
+        onKeyPress={handleRight}
+      ></img>
+      <img
+        alt={"left"}
+        src={arrowLeft}
+        className={styles.slider__btnLeft}
+        onClick={handleLeft}
+        onKeyPress={handleLeft}
+      ></img>
+    </div>
   )
 }
 
