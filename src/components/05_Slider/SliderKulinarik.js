@@ -15,18 +15,17 @@ Selbstverständlich haben wir unsere traditionellen Wurzeln in Bayern und auf de
   },
   {
     id: 2,
-    title: "Kulinarik",
-    subtitle: "Buffets aus aller Welt",
-    img: require("../../images/sliderKulinarik-2.jpeg"),
-    text: `Besonders unsere Balkanspezialitäten nach traditionellen Familienrezepturen bereichern unsere BBQ-Events und sind fester Bestandteil in unserem Portfolio.
-Absolute Frische, Qualität und Regionalität stehen für uns an erster Stelle.`,
+    title: "Hochzeiten",
+    subtitle: "Der schönste Tag Ihres Lebens",
+    img: require("../../images/sliderHochzeit-1.jpg"),
+    text: `Nach über 30 Ehejahren blicken wir noch immer gerne auf unseren eigenen Hochzeitstag zurück, der uns daran erinnert, wie unvergesslich ein einzelner Tag sein kann. Deshalb legen wir alles daran, gerade diesen Tag für Sie zu einem einzigartigen Erlebnis werden zu lassen.`,
   },
   {
     id: 3,
-    title: "Kulinarik",
-    subtitle: "Highlights am Buffet",
-    img: require("../../images/sliderKulinarik-3.jpeg"),
-    text: `Fleischspezialitäten bilden nach wie vor den Zenit eines klassischen Buffets. Ob rosa gebratene Lende vom Kalb, gegrillte Haxe vom Lamm oder englisches Roastbeef - bei uns kommt alles unters Messer!`,
+    title: "Ausstattung",
+    subtitle: "Die exklusive Cigarbar",
+    img: require("../../images/cigarbar.jpg"),
+    text: `Eine Zigarre bildet zusammen mit dem passenden Drink ein Sinnbild von Luxus und Genuss – somit wird sie mit besonderen Anlässen in Verbindung gebracht. Deshalb präsentieren wir Ihnen unsere Alfred & Son Cigar-Bar. `,
   },
 ]
 

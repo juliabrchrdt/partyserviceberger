@@ -34,7 +34,7 @@ export default () => (
       filename={"teamBerger.jpg"}
     />
     <SliderKulinarik link={" Erfahre mehr"} />
-    <SliderHochzeit link={" Erfahre mehr"} />
+
     <Cards
       title={"Locations"}
       text={`Zusammen mit unseren Partnerlocations in den unterschiedlichen Regionen im Herzen Bayerns, können Sie ihr Event, egal ob Hochzeit, Firmenfeier oder Jubuiläen, einen besonderen Schauplatz bieten. Natürlich werden Sie auch hier kulinarisch bestens versorgt.`}

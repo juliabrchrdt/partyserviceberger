@@ -8,7 +8,7 @@ const Hochzeiten = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Partyservie Berger - Hochzeiten</title>
+        <title>Partyservie Berger - Startseite</title>
         <meta name="Partyservice und Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten" />
       </Helmet>
       <Header alt={"header"}  filename={"hochzeit-3.jpg"} title={"Hochzeiten"} styling={{height: "100%"}}/>
