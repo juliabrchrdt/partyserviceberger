@@ -13,7 +13,7 @@ module.exports = {
     image: "/images/favicon.png",
   },
 
-  plugins: [`gatsby-plugin-sass`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+  plugins: [`gatsby-plugin-sass`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, `gatsby-plugin-netlify`, `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

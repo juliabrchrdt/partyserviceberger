@@ -3,11 +3,16 @@ import Layout from "../components/01_Layout/Layout"
 import { Header} from "../components/03_Header/Header"
 import { Contact } from "../components/07_Contact/Contact"
 import TextBox from "../components/04_TextBox/Textbox"
+import { Helmet } from "react-helmet"
 
 
 const UeberUns = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Partyservie Berger - Ueber uns</title>
+        <meta name="Partyservice und Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten" />
+      </Helmet>
      <Header title={"Über uns"} filename={"teamBerger-6.jpg"} styling={{height: "100%"}}/>
 
       <TextBox

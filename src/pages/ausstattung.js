@@ -2,9 +2,14 @@ import React from "react"
 import Layout from "../components/01_Layout/Layout"
 import { Header} from "../components/03_Header/Header"
 import TextBox from "../components/04_TextBox/Textbox"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>Partyservie Berger - Ausstattung</title>
+      <meta name="Partyservice und Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten" />
+    </Helmet>
     <Header alt={"header"}  filename={"ausstattung.jpg"} title={"Ausstattung & Specials"}  styling={{height: "100%"}}/>
     <TextBox
       title={"Cigar Voyager Bar"}
