@@ -7,13 +7,8 @@ import ImageProvider from "../00_Lib/ImageProvider"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
-
-
-
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
-
-
 
   return (
     <div className={styles.nav}>
@@ -35,8 +30,7 @@ const Navbar = () => {
             <Link
               to="/kulinarik"
               className={styles.nav__link}
-              activeClassName={styles.nav__active}
-            >
+              activeClassName={styles.nav__active}>
               Kulinarik
             </Link>
           </li>
@@ -44,8 +38,7 @@ const Navbar = () => {
             <Link
               to="/hochzeiten"
               className={styles.nav__link}
-              activeClassName={styles.nav__active}
-            >
+              activeClassName={styles.nav__active}>
               Hochzeiten
             </Link>
           </li>

@@ -6,11 +6,15 @@ import SliderKulinarik from "../components/05_Slider/SliderKulinarik"
 import SliderHochzeit from "../components/05_Slider/SliderHochzeit"
 import { Cards } from "../components/06_Cards/Cards"
 import { Contact } from "../components/07_Contact/Contact"
-import { data } from "../components/04_TextBox/TextboxData"
 
 export default () => (
   <Layout>
-    <Header alt={"header"} filename={"header.jpg"} fileLogo={"logo.png"} styling={{height: "100%"}}/>
+    <Header
+      alt={"header"}
+      filename={"header.jpg"}
+      fileLogo={"logo.png"}
+      styling={{ height: "100%" }}
+    />
     <TextBox
       title={"Genießen Sie das Besondere"}
       text={`Nach diesem Motto verwöhnen wir unsere Kunden nun schon seit vielen Jahren. 
@@ -19,14 +23,14 @@ export default () => (
       linkName={"Mehr über uns"}
       internLink={"/ueberUns"}
       signature={"Alfred & Sabine Berger"}
-alt={"Alfred und Sabine Berger"}
-filename={"teamBerger.jpg"}
+      alt={"Alfred und Sabine Berger"}
+      filename={"teamBerger.jpg"}
     />
     <SliderKulinarik link={" Erfahre mehr"} />
     <SliderHochzeit link={" Erfahre mehr"} />
     <Cards
       title={"Locations"}
-      text={ `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      text={`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.`}
       sub1={"Schloss Offenberg"}
