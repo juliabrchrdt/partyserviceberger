@@ -12,8 +12,9 @@ import { Contact } from "../components/07_Contact/Contact"
 export default () => (
   <Layout>
       <Helmet>
+            <meta charSet="utf-8" />
             <title>Partyservie Berger - Startseite</title>
-            <meta name="Partyservice und Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten" />
+            <meta name="Partyservice Berger: Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten," />
       </Helmet>
     <Header
       alt={"header"}
@@ -23,8 +24,8 @@ export default () => (
     />
     <TextBox
       title={"Genießen Sie das Besondere"}
-      text={`Nach diesem Motto verwöhnen wir unsere Kunden nun schon seit vielen Jahren. 
-      Der Erfolg spricht für uns. Wir arbeiten stets daran, unser Angebot für Sie zu erweitern, sind immer auf der Suche nach neuen Rezepten. 
+      text={`Nach diesem Motto verwöhnen wir unsere Kunden nun schon seit vielen Jahren mit feinsten Köstlichkeiten. 
+      Der Erfolg spricht für uns. Wir arbeiten stets daran, unser kulinarisches Angebot für Sie zu erweitern, sind immer auf der Suche nach neuen Rezepten. 
       Genießen Sie Ihr Fest und lassen Sie sich von uns verwöhnen - wir beraten Sie gerne!  `}
       linkName={"Mehr über uns"}
       internLink={"/ueberUns"}
@@ -36,9 +37,7 @@ export default () => (
     <SliderHochzeit link={" Erfahre mehr"} />
     <Cards
       title={"Locations"}
-      text={`Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.`}
+      text={`Zusammen mit unseren Partnerlocations in den unterschiedlichen Regionen im Herzen Bayerns, können Sie ihr Event, egal ob Hochzeit, Firmenfeier oder Jubuiläen, einen besonderen Schauplatz bieten. Natürlich werden Sie auch hier kulinarisch bestens versorgt.`}
       sub1={"Schloss Offenberg"}
       sub2={"Schloss Steinach"}
       sub3={"Gut Haggn"}
