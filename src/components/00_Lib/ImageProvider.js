@@ -13,7 +13,7 @@ export default (props) => {
                   node {
                       relativePath
                        childImageSharp {
-                          fluid(quality: 80) {
+                          fluid(quality: 75) {
                               ...GatsbyImageSharpFluid
                           }
                       }
