@@ -12,7 +12,7 @@ const Locations = () => {
         <title>Partyservie Berger - Locations</title>
         <meta name="Partyservice und Catering im Umkreis Straubing" content="Startseite Partyservice Berger Straubing, Buffets aus aller Welt, Kulinarik, Hochzeiten" />
       </Helmet>
-      <Header  title={"Unsere Partnerlocations"} filename={"locations.jpg"} styling={{height: "100%"}} alt={"locations"}/>
+      <Header  title={"Partnerlocations"} filename={"schlossOffenberg.jpg"} styling={{height: "100%"}} alt={"locations"}/>
 
       <TextBox
         title={"Schloss Steinach"}

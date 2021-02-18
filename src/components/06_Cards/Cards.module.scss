@@ -7,7 +7,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5vh 15vh 25vh 25vh 25vh 5vh;
+    grid-template-rows: 5vh 20vh 25vh 25vh 25vh 5vh;
     background-color: white;
     grid-row-gap: 2em;
   }
@@ -93,8 +93,7 @@
   .cards {
     &__content {
       z-index: 200;
-
-      grid-template-columns: repeat(5, 20%);
+      grid-template-columns: 30% 20% 20% 20%;
       grid-template-rows: 10vh 50vh 10vh;
       grid-column-gap: 3em;
     }

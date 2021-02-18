@@ -6,7 +6,9 @@ export const Header = props => {
   return (
     <div className={styles.box}>
       <div className={styles.header}>
+
         <div className={styles.header__position}>
+
           <ImageProvider
             styling={props.styling}
             alt={props.alt}
@@ -17,8 +19,8 @@ export const Header = props => {
         <div className={styles.header__logo}>
           <ImageProvider alt={props.alt} filename={props.fileLogo} />
 
-          <h1 className={styles.header__title}>{props.title}</h1>
         </div>
+        <h1 className={styles.header__title}>{props.title}</h1>
       </div>
     </div>
   )
