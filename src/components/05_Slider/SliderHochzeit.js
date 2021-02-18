@@ -9,21 +9,18 @@ const slides = [
     id: 1,
     title: "Hochzeiten",
     subtitle: "Ihr schönster Tag",
-    img: require("../../images/sliderHochzeit-1.jpg"),
     text: `Nach über 30 Ehejahren blicken wir noch immer gerne auf unseren eigenen Hochzeitstag zurück, der uns daran erinnert, wie unvergesslich ein einzelener Tag sein kann.  `,
   },
   {
     id: 2,
     title: "Hochzeiten",
     subtitle: "Wir schaffen Erinnerungen",
-    img: require("../../images/sliderHochzeit-2.jpg"),
     text: `Je nach Ihren Wünschen und Vorstellungen übernehmen wir gerne die Planung Ihres Hochzeitstages bis hin zum Hochzeitsauto. Oder aber wir halten uns im Hintergrund und kümmern uns voll und ganz um die kulinarischen Aspekte Ihres Tages. `,
   },
   {
     id: 3,
     title: "Hochzeiten",
     subtitle: "Specials für Hochzeiten",
-    img: require("../../images/sliderHochzeit-3.jpg"),
     text: ` Unser engagiertes Serviceteam verwöhnt Sie mit vielerlei Canapés oder einem abwechslungsreichen Flying Buffet. Unsere hauseigenen, spritzigen Aperitif-Kreationen runden den klassischen Sektempfang ab..`,
   },
 ]
